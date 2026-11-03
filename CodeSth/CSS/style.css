@@ -82,23 +82,28 @@ body {
     cursor: pointer;
 }
 
-/* Tipografia */
+/* Tipografia e Centralizações */
 h1, h2, h3 {
     font-family: var(--font-heading);
     letter-spacing: 1px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .titulo-sessao {
     text-align: center;
     font-size: 2.2rem;
     color: var(--text-primary);
-    margin-bottom: 40px;
+    margin: 0 auto 40px auto;
     text-transform: uppercase;
     border-bottom: 2px solid var(--blood-red);
     display: inline-block;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
     padding-bottom: 10px;
 }
 
@@ -336,21 +341,26 @@ h1, h2, h3 {
     width: 100%;
 }
 
-/* Redes */
-.text-center {
-    text-align: center;
+/* Alinhamento dos Botões de Redes Sociais */
+.botoes-contato-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .btn-redes {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background: var(--bg-card);
     border: 1px solid var(--blood-red);
     color: var(--bright-red);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border-radius: 50%;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -360,6 +370,7 @@ h1, h2, h3 {
     background: var(--bright-red);
     color: #000;
     box-shadow: 0 0 20px var(--bright-red);
+    transform: translateY(-3px);
 }
 
 /* Botão Flutuante */
