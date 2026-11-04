@@ -191,9 +191,15 @@ section {
     transition: 0.3s;
 }
 
+/* Estilo de destaque especial para o card de Investigação Conjugal */
+.card-destaque {
+    border: 1px solid rgba(0, 255, 204, 0.4);
+    background: linear-gradient(145deg, #131c2e, #0e1624);
+}
+
 .card-item:hover {
     transform: translateY(-5px);
-    border-color: rgba(0, 255, 204, 0.3);
+    border-color: rgba(0, 255, 204, 0.5);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -206,6 +212,12 @@ section {
     color: var(--text-muted);
     padding: 4px 10px;
     border-radius: 8px;
+}
+
+.badge-especial {
+    background: rgba(0, 255, 204, 0.15) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(0, 255, 204, 0.3);
 }
 
 .icon-neon {
