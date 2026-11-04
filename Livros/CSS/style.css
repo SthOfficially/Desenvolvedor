@@ -51,9 +51,11 @@ body {
     padding: 15px 0;
 }
 
-.logo img {
-    max-height: 50px;
-    filter: drop-shadow(0 0 5px var(--blood-red));
+/* AJUSTE DE TAMANHO DA LOGO (Menor e discreta) */
+.logo-ajustada img {
+    max-height: 35px; /* Reduzido para ficar elegante no menu */
+    width: auto;
+    filter: drop-shadow(0 0 4px var(--blood-red));
 }
 
 .menu {
@@ -182,6 +184,13 @@ h1, h2, h3 {
 
 .capa-livro img {
     border-color: var(--bright-red);
+}
+
+/* AJUSTE DE TAMANHO DA FOTO DA AUTORA (Menor e proporcional) */
+.foto-autora-menor img {
+    max-width: 260px; /* Reduzido para dar destaque equilibrado ao texto */
+    margin: 0 auto;
+    display: block;
 }
 
 /* Botões */
